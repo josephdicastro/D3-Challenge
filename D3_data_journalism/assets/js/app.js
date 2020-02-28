@@ -30,7 +30,6 @@ function drawChart(healthData) {
         d.healthcare = +d.healthcare;
         d.povertyMoe = +d.povertyMoe;
         d.age = +d.age;
-        d.ageMoe = +d.ageMoe;
         d.income = +d.income;
         d.healthcare = +d.healthcare;
         d.obesity = +d.obesity;
@@ -116,11 +115,11 @@ function drawChart(healthData) {
 
     //step 8: create event listeners
     circleGroup
-        .on("mouseover", function (data) { toolTip.show(data,this); console.log(this)})
+        .on("mouseover", function (data) { toolTip.show(data,this); })
         .on("mouseout", function (data,index) {toolTip.hide(data)})
 
     labelGroup
-        .on("mouseover", function (data) { toolTip.show(data,this); console.log(this)})
+        .on("mouseover", function (data) { toolTip.show(data,this);})
         .on("mouseout", function (data,index) {toolTip.hide(data)})
 
 }
