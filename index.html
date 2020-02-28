@@ -1,51 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Visualizing ACS 2014 Behavioral Risk Data</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/d3Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet"
+          href="styles.css">
+
+    <title>Visualizing ACS 2014 Behavioral Risk Data</title>
 </head>
 
 <body>
-  <div class="container">
-    <header class="headerfooter">
-      <h3>Visualizing ACS 2014 Behavioral Risk Data</h3>
-    </header>
-    <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div id="scatter">
-          <!-- We append our chart here. -->
-        </div>
-        <div id="text">
-          <h2>American Community Survey Behavioral Risk Measures</h2>
-          <p>The American Community Survey (ACS) is one of the principal means by which 
-            the States and the Federal Government gain insight into the lived experience
-            of Americans. Behavioral Risk Measures are a part of these longitudal studies.</p>
-            <p>Using a dataset
-            from the 2014 ACS, I present an interactive scatterplot where one can choose the measures one
-            wants to plot against each other. The chart will update and rescale its axes based on user input.</p>
-          </p> 
-        </div>
-      </div>
+    <div class="container-md">
+        <header>
+            <nav class="navbar 
+                        navbar-expand-md 
+                        navbar-dark 
+                        bg-dark">
+                <a href="index.html" class="navbar-brand">Visualizing 2014 ACS Risk Factors</a>
+                <button type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle Navigation"
+                        class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarSupportedContent"
+                     class="collapse 
+                            navbar-collapse 
+                            justify-content-end">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-md-12">
+                    <article>
+                        <h1 class="h1_main">Interactive Scatterplot</h1>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="scatter">
+                                    <!-- We append our chart here. -->
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="text">
+                                    <h2>American Community Survey Behavioral Risk Measures</h2>
+                                    <p>The American Community Survey (ACS) is one of the principal means by which 
+                                      the States and the Federal Government gain insight into the lived experience
+                                      of Americans. Behavioral Risk Measures are a part of these longitudal studies.</p>
+                                      <p>Using a dataset
+                                      from the 2014 ACS, I present an interactive scatterplot where one can choose the measures one
+                                      wants to plot against each other. The chart will update and rescale its axes based on user input.</p>
+                                    </p> 
+                                  </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="bg-dark">
+            <p style="text-align: center; color:white">&copy; Copyright: Joseph DiCastro 2020</p>
+        </footer>
     </div>
-
-  <!-- Footer-->
-  <footer class="headerfooter">
-    <p>&copy;Joseph DiCastro 2020</p>
-  </footer>
-</div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-
-  <script type="text/javascript" src="assets/js/app2.js"></script>
-
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+<script type="text/javascript" src="assets/js/app2.js"></script>
 
 </html>
