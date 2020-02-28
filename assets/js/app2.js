@@ -26,16 +26,16 @@ let chosenYAxis = 'healthcare'
 
 function xScale(healthData, chosenXAxis) {
     let xLinearScale = d3.scaleLinear()
-                         .domain([d3.min(healthData, d=> d[chosenXAxis]) * 0.3,
-                                  d3.max(healthData, d=> d[chosenXAxis]) * 1.2 ])
+                         .domain([d3.min(healthData, d=> d[chosenXAxis]) * 0.8,
+                                  d3.max(healthData, d=> d[chosenXAxis]) * 1.1 ])
                          .range([0, bodyWidth])
     return xLinearScale;
 }
 
 function yScale(healthData, chosenYAxis) {
     let yLinearScale = d3.scaleLinear()
-                         .domain([d3.min(healthData, d=> d[chosenYAxis]) * 0.3,
-                                  d3.max(healthData, d=> d[chosenYAxis]) * 1.2 ])
+                         .domain([d3.min(healthData, d=> d[chosenYAxis]) * 0.5,
+                                  d3.max(healthData, d=> d[chosenYAxis]) * 1.1 ])
                          .range([bodyHeight,0])
     return yLinearScale;
 }
