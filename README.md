@@ -4,4 +4,6 @@ This project is an introduction and exploration of some of D3's interactive plot
 
 6 risk factors are plotted in an interactive scatterplot, where the user can select which variables to plot against each other. 
 
+https://josephdicastro.github.io/Visualizing_2014_ACSRiskFastors/
+
 Technologies: html/css, bootstrap, javascript, d3
